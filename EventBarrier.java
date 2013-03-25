@@ -1,9 +1,9 @@
 public class EventBarrier extends AbstractEventBarrier {
 
-	boolean gatedown = false;
-	int totaltasks = 0;
-	int waitercount = 0;
-	int crossingcount = 0;
+	boolean gatedown;
+	int totaltasks;
+	int waitercount;
+	int crossingcount;
 
 	public EventBarrier(int numWorkers) {
 		super(numWorkers);
