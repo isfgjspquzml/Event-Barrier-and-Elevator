@@ -13,6 +13,7 @@ public class EventBarrier extends AbstractEventBarrier {
 	public synchronized void arrive() {
 		System.out.println("arrive (start)");
 		waitercount++;
+		System.out.println("Gate is down? "+gatedown);
 		while(gatedown) {
 			try {
 				this.wait();
@@ -37,7 +38,7 @@ public class EventBarrier extends AbstractEventBarrier {
 			}
 		}
 		gatedown = true;
-		System.out.println("raise (start)");
+		System.out.println("raise (end)");
 	}
 
 	public synchronized void complete() {

@@ -8,7 +8,6 @@ public abstract class AbstractBuilding {
 	 * Other variables/data structures as needed goes here 
 	 */
 
-
 	public AbstractBuilding(int numFloors, int numElevators) {
 		_numFloors = numFloors;
 		_numElevators = numElevators;
